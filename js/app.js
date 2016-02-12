@@ -18,11 +18,17 @@ var questions =
 	{value: "Kareem Abdul-Jabbar", correct: true}, 
 	{value: "Kobe Bryant", correct: false}]},
 	{id:4, 
-	question: "4.Everybody knows that the New York Yankees have the most World Series wins. But who is second on that list?", 
+	question: "4. Everybody knows that the New York Yankees have the most World Series wins. But who is second on that list?", 
 	options: [{value: "San Francisco Giants", correct: false}, 
 	{value: "Oakland Athletics", correct: false}, 
 	{value: "Boston Red Sox", correct: false}, 
-	{value: "St. Louis Cardinals", correct: true}]}]
+	{value: "St. Louis Cardinals", correct: true}]},
+	{id:5,
+	question: "5. The L.A. Galaxy is the team that has won the most MLS Cups. However, what team has won the first MLS Cup? Hint: The Major League Soccer was founded in 1996.",
+	options: [{value: "D.C. United", correct: true},
+	{value: "Chicago Fire", correct: false},
+	{value: "Kansas City Wizards", correct: false},
+	{value: "Houston Dynamo", correct: false}]}]
 
 var trackIndex = 0;
 var score = 0;
@@ -99,7 +105,7 @@ $(document).ready(function() {
 					}
 					if (answer == correctAns) {
 						score++;
-						$('#explain').append('<span id="scoreCheck">'+score+'</span>' + '/ '+'<span id="numQ">4</span>');
+						$('#explain').append('<span id="scoreCheck">'+score+'</span>' + '/ '+'<span id="numQ">5</span>');
 					}
 				}
 			}
